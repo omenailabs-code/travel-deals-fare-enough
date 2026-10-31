@@ -1,21 +1,30 @@
 # PROJECT.md — Travel Deals Business (state)
 
 ## Current state (rewrite every 20 steps)
-- Phase 0 (Setup) nearly complete. Blocked on owner: brand approval (NEEDS OWNER #1 in TASKS.md).
-- Homepage design preview v1 done (site/index.html) — awaiting owner reaction, then iterate. Brand shown is placeholder "FareFable" pending #1.
-- After brand approval: lock name, claim handles, enter Phase 1 (deal engine).
+- Phase 1 (deal engine) in progress — engine core built 2026-10-31: SQLite schema (routes/prices/deals/baseline_cache), anomaly detection, confidence ladder (`dealengine/` + `tests/`, 13/13 unit tests, seed→check demo verified). Live price feeds still blocked on NEEDS OWNER #2 (data-source signups).
+- Homepage design preview v1 done (`site/index.html`, screenshots in `site/screenshots/`) — awaiting owner reaction, then iterate.
+- Domain cost check 2026-10-31: .travel ≈ $16 first-year promo but ~$124–134/yr renewal (premium TLD); .co ≈ $15–31/yr; .io ≈ $35–60/yr. fareenough.com/.net/.app taken; .travel/.co/.io free to claim. YT/X @fareenough appear taken.
+- Brand = **Fare Enough** (owner-approved 2026-10-31). After owner's domain decision: purchase (hard stop #3) + Cloudflare Pages (free tier).
 
 ## Brand
-Candidates checked 2026-10-31 (RDAP .com registry lookup; YouTube/X handle 404 = likely available):
+**Decision: Fare Enough** (owner-approved 2026-10-31; supersedes the candidates below).
+
+Fare Enough availability (checked 2026-10-31, RDAP + handle lookups):
+
+| Name | .com | Other domains | YouTube | X | Notes |
+|---|---|---|---|---|---|
+| Fare Enough | taken (reg. 2002-08-04, renewed to 2027) | .travel/.co/.io free; .net/.app taken | appears taken (200) | appears taken (200) | **Chosen by owner**; recommended domain = fareenough.travel; handle variants (@fareenoughdeals etc.) unchecked |
+
+Earlier candidates checked the same way (kept for the record):
 
 | Name | .com | YouTube | X | Notes |
 |---|---|---|---|---|
-| FareFable | likely available (RDAP 404) | likely available | likely available | Recommended: brandable, deal-story vibe |
+| FareFable | likely available (RDAP 404) | likely available | likely available | Brandable, deal-story vibe |
 | FareHarvest | likely available (RDAP 404) | likely available | likely available | Literal, trustworthy |
 | GlitchAir | likely available (RDAP 404) | appears taken (200) | appears taken (200) | Niche fit for mistake fares, weaker handle story |
 
 Instagram/TikTok/Pinterest handle checks are unreliable via bot (login walls) — verify manually at account setup.
-Decision: PENDING OWNER.
+Decision: **Fare Enough** — owner-approved 2026-10-31. Purchase fareenough.travel = hard stop #3 (owner funds).
 
 ## Machine audit (2026-10-31)
 - Windows 11 (build 26200), AMD64
