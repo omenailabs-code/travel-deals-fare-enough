@@ -2,6 +2,7 @@
 
 ## Current state (rewrite every 20 steps)
 - Phase 0 (Setup) nearly complete. Blocked on owner: brand approval (NEEDS OWNER #1 in TASKS.md).
+- Homepage design preview v1 done (site/index.html) — awaiting owner reaction, then iterate. Brand shown is placeholder "FareFable" pending #1.
 - After brand approval: lock name, claim handles, enter Phase 1 (deal engine).
 
 ## Brand

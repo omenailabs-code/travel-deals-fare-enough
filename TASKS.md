@@ -22,6 +22,8 @@
 - Exit: 20 verified deals stored, each with source URL, timestamp, confidence score
 
 ## Phase 2 — Website (blocked on NEEDS OWNER #3)
+- [x] Homepage design preview v1 — `site/index.html` (2026-10-31): dark navy + amber identity, Space Grotesk/Inter, featured live-deal card, deals grid with Verified/Flash/Mistake/Expired states + confidence dots, category tiles, how-it-works, email capture, affiliate disclosure. Sample data, clearly labeled as design preview. Brand = placeholder FareFable (pending NEEDS OWNER #1).
+- [ ] Owner reacts to design preview v1 → iterate (we propose, owner reacts, we iterate)
 - [ ] Astro/Next static site, Git repo, free hosting; deal template, route/destination pages, email capture, affiliate links + disclosure, privacy page
 - [ ] Automation: verified deal -> DB write -> page build -> deploy -> sitemap ping, no manual step
 - Exit: site live; new verified deal reaches the site with no manual step; Lighthouse > 90
