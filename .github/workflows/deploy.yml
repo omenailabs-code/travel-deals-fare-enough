@@ -62,4 +62,7 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         run: |
-          cd site && npx wrangler pages deploy dist --project-name travel-deals-fare-enough --api-token=${{ secrets.CLOUDFLARE_API_TOKEN }} --account-id=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          cd site && npx wrangler pages deploy dist --project-name travel-deals-fare-enough
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
