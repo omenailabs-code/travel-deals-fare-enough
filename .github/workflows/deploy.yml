@@ -27,7 +27,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          pip install sqlite3 lxml httpx pillow
+
+      - name: Run deal scraping and anomaly detection
+        run: |
+          python dealengine/check.py --mode full
+
+      - name: Rebuild deals.json from database
+        run: |
+          python rebuild_deals.py
+
+      - name: Generate deal descriptions
+        run: |
+          python dealengine/content_gen.py
+
+      - name: Install frontend dependencies
         run: |
           cd site
           npm install
