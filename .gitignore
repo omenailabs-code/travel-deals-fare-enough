@@ -5,3 +5,4 @@ __pycache__/
 node_modules/
 cache/
 *.db
+site/raw_data/
