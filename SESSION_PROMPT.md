@@ -128,3 +128,4 @@ User requested CSS improvements — customize colors, spacing, fonts per their p
 - Project venv at `.venv/` with Playwright + Chromium, httpx, BeautifulSoup
 - `.env` in project root is gitignored — never commit or log secrets
 - `*.db` files are gitignored
+# Updated Sun, Nov  1, 2026  3:53:52 PM
