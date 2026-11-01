@@ -47,19 +47,19 @@ jobs:
         run: |
           python dealengine/content_gen.py
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install frontend dependencies
         run: |
-          npm install
+          cd site && npm install
 
       - name: Build site
         run: |
-          npm run build
+          cd site && npm run build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v2
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: travel-deals-fare-enough
-          directory: dist
-          entrypoint: npm run build
+        run: |
+          cd site && npx wrangler pages deploy dist --project-name travel-deals-fare-enough --api-token=${{ secrets.CLOUDFLARE_API_TOKEN }} --account-id=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
