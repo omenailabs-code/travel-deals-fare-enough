@@ -1,0 +1,79 @@
+[
+  {
+    "resort": "Corazon Cabo Resort & Spa",
+    "hotel_rating": 4.7,
+    "price": 949,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Corazon Cabo Resort & Spa",
+    "hotel_rating": 4.7,
+    "price": 1039,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Corazon Cabo Resort & Spa",
+    "hotel_rating": 4.7,
+    "price": 3065,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Ubud Riverfront Private Pool Villas",
+    "hotel_rating": 4.7,
+    "price": 999,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Ubud Riverfront Private Pool Villas",
+    "hotel_rating": 4.7,
+    "price": 1089,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Ubud Riverfront Private Pool Villas",
+    "hotel_rating": 4.7,
+    "price": 4234,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 899,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 989,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 3512,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 699,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 799,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  }
+]

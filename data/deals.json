@@ -1,0 +1,179 @@
+[
+  {
+    "resort": "Barcelo Bavaro Palace",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 5,
+    "price": 4379.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "Dreams Los Cabos Resort & Spa",
+    "destination": "Los Cabos",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package"
+  },
+  {
+    "resort": "Grand Fiesta Americana Cancun",
+    "destination": "Cancun",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package"
+  },
+  {
+    "resort": "Sunshine Resort Orlando",
+    "destination": "Orlando",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package"
+  },
+  {
+    "resort": "Bahia Pr\u00edncipe Riviera Maya",
+    "destination": "Riviera Maya",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package"
+  },
+  {
+    "resort": "Iberostar Grand Punta Cana",
+    "destination": "Punta Cana",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package"
+  },
+  {
+    "resort": "Barcelo Bavaro Beach",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4389.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "Ocean Blue and Sand",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4399.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "Dreams Cap Cana Resort & Spa",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4539.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "Ocean El Faro-el Beso Adults Only",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4869.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "Ocean El Faro",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 5029.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package"
+  },
+  {
+    "resort": "The Aviary Hotel",
+    "destination": "",
+    "stars": null,
+    "price": 399.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package"
+  },
+  {
+    "resort": "Anana Ecological Resort Krabi",
+    "destination": "",
+    "stars": null,
+    "price": 419.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package"
+  },
+  {
+    "resort": "Meli\u00e1 Pattaya Hotel",
+    "destination": "",
+    "stars": null,
+    "price": 499.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package"
+  },
+  {
+    "resort": "Mai Khao Lak Beach Resort & Spa",
+    "destination": "",
+    "stars": null,
+    "price": 799.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "route_key": "SFO-LAX",
+    "price": 50.4,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight"
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "route_key": "ORD-MIA",
+    "price": 124.8,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LHR",
+    "route_key": "JFK-LHR",
+    "price": 286.0,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight"
+  }
+]

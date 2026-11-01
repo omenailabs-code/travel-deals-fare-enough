@@ -49,12 +49,10 @@ jobs:
 
       - name: Install frontend dependencies
         run: |
-          cd site
           npm install
 
       - name: Build site
         run: |
-          cd site
           npm run build
 
       - name: Deploy to Cloudflare Pages
@@ -63,5 +61,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: travel-deals-fare-enough
-          directory: site/dist
-          entrypoint: cd site && npm run build
+          directory: dist
+          entrypoint: npm run build

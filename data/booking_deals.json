@@ -1,0 +1,10 @@
+[
+  {
+    "resort": "EcoHotel",
+    "price": 58.01,
+    "hotel_rating": 9.0,
+    "destination": "Santa Marta, Colombia",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  }
+]

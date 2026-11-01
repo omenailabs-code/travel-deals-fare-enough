@@ -1,0 +1,74 @@
+[
+  {
+    "resort": "Ocean El Faro",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1699,
+    "was_price": 5029,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Ocean El Faro-el Beso Adults Only",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1699,
+    "was_price": 4869,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Barcelo Bavaro Beach",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1719,
+    "was_price": 4389,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Barcelo Bavaro Palace",
+    "destination": "Dominican Republic",
+    "hotel_rating": 5.0,
+    "price": 1729,
+    "was_price": 4379,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Ocean Blue and Sand",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1769,
+    "was_price": 4399,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Vik Hotel Cayena Beach",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.0,
+    "price": 1809,
+    "was_price": 4629,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Dreams Cap Cana Resort & Spa",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1819,
+    "was_price": 4539,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Sunscape Coco Punta Cana",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.0,
+    "price": 1849,
+    "was_price": 4579,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  }
+]
