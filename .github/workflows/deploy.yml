@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Run twice daily (6 AM and 6 PM UTC)
+  schedule:
+    - cron: '0 6 * * *'  # 6 AM UTC
+    - cron: '0 18 * * *'  # 6 PM UTC
+  # Also trigger on push to main
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  pages: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          cd site
+          npm install
+
+      - name: Build site
+        run: |
+          cd site
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

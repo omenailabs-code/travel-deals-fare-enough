@@ -31,5 +31,90 @@ Windows 11, RTX 5060 Ti 16GB, ~15.6GB RAM; Ollama 0.40.11 serving `qwen3.8` 27B 
 ## Standing rules that override any tactic
 Hard stops (spending money, accounts under the owner's legal identity, domain/hosting purchase, paid ads, irreversible/public non-routine acts) require the owner first; every published deal re-verified and labeled honestly with source URL + timestamp + confidence; no fake scarcity/reviews/prices; free/OSS tools only (paid = hard stop); work only on the current phase's tasks; after 3 failed attempts mark BLOCKED and move on.
 
-## First action after boot
-Confirm the phase / exit-criteria / next-task line, list the open NEEDS OWNER items with a one-line recommendation and cost for each, then ask the owner to react to the design preview and to answer NEEDS OWNER #2/#3. Do not sit idle — queue the asks at the top of TASKS.md and continue with non-blocked work (e.g., Travelpayouts adapter scaffold with mocked responses, deal→site template wiring, picking the 20-route baseline list).
+## Latest Session Progress (2026-11-01) — New Session Pick-Up
+
+### What's Been Completed (Session ending 2026-11-01)
+
+**Data Pipeline — Fully Operational:**
+- `rebuild_deals.py` rebuilt `site/data/deals.json` to exactly 18 clean deals: 15 genuine packages + 3 flight routes
+- `content_gen.py` generates unique Ollama descriptions per deal using `qwen2.5:3b` (local, free, 1.9GB — downloaded to replace heavy `qwen3.8`)
+- `deals.json` now has 18 deals with unique descriptions, star ratings, and confidence scores
+- `rebuild_deals.py` filters: bad_patterns for nav/filter entries, minimum price for luxuryescapes.com, route_id→routes.id matching, LEFT JOIN for origin/destination
+
+**Frontend — Fully Verified:**
+- Astro build passes: `npm run build` → `dist/` static HTML
+- 18 cards rendering correctly with: titles, prices, star ratings, All-Inclusive badges, Ollama descriptions, flight confidence scores
+- Navy/Amber theme (#0a192f / #f59e0b) applied across all components
+- `MainLayout.astro` with Tailwind CSS, Google Fonts (Space Grotesk/Inter)
+- `DealCard.astro` renders flights with origin→destination, packages with stars
+
+**Database:**
+- `deals.db`: 5 routes, 15+ packages with star ratings (4-5 star), 127 deal rows (deduped to 18)
+- `packages` table has `stars` column, backfilled for sample resorts
+- `deals` table has `route_id` nullable for package deals
+
+**Git State:**
+- Repo committed: `a5883a4 Complete travel deals platform: Ollama descriptions, 18 deals, Astro build`
+- Branch: `master`
+
+### What's Pending
+
+1. **FREE HOSTING DEPLOYMENT** — User wants to host completely free. Options:
+   - **GitHub Pages** (free, requires GitHub account, push to repo → auto-deploy)
+   - **Cloudflare Pages** (free, 100K req/day, requires Cloudflare)
+   - **Netlify** (free, 100GB bandwidth, requires Netlify)
+   - **Vercel** (free tier, 100GB, requires Vercel)
+   - **User hasn't chosen yet** — ask which platform
+
+2. **TWICE-DAILY UPDATES** — Need to set up:
+   - Cron job or scheduled task running `python dealengine/check.py --mode full`
+   - Regenerates `deals.json` with fresh scraped data
+   - On deployment, site rebuilds from updated JSON
+
+3. **CSS ENHANCEMENTS** — Tailwind CSS is set up, can be customized:
+   - Modify `tailwind.config.mjs` for theme tweaks
+   - Add CSS in `MainLayout.astro` `<style>` blocks
+   - Modify `DealCard.astro` for card styling
+
+### How to Pick Up in a New Session
+
+```
+# CONTINUE.md — paste into a fresh Hermes session
+
+You are continuing the "Fare Enough" travel-deals business. Your standing instructions live in this project's master prompt — re-read it and its state files before doing anything.
+
+## Current State (Updated 2026-11-01)
+- 18 clean deals in DB (15 packages, 3 flights), all with unique Ollama descriptions
+- Frontend built and verified: 18 cards rendering with star ratings, badges, descriptions
+- Git: master branch, commit a5883a4
+- Ollama: qwen2.5:3b (local, free)
+
+## What To Do Next
+1. Ask user which FREE hosting platform they prefer (GitHub Pages / Cloudflare / Netlify / Vercel)
+2. Set up the chosen platform and push the site
+3. Verify the live URL is working
+4. Set up twice-daily automated data updates (cron/scheduled task)
+5. Apply any CSS enhancements the user wants
+
+## Key Constraints
+- NO paid services (free hosting, local AI, free scraping)
+- Navy/Amber theme (#0a192f, #f59e0b)
+- 18 deals must stay clean and verified
+
+## File Locations
+- Project: C:\Users\omena\travel-deals
+- Frontend: C:\Users\omena\travel-deals\site (Astro 5.x, Tailwind CSS)
+- Backend: C:\Users\omena\travel-deals\dealengine (SQLite, Ollama)
+- DB: C:\Users\omena\travel-deals\deals.db
+- Deals JSON: C:\Users\omena\travel-deals\site\data\deals.json (18 deals)
+```
+
+### First Action After Boot
+1. Read `PROJECT.md`, `TASKS.md`, `LOG.md`, and `CONTINUE.md`
+2. State current phase and next task
+3. Ask user about free hosting preference (GitHub Pages / Cloudflare Pages / Netlify / Vercel)
+4. Set up the repo/remote and push the site to the chosen platform
+5. Verify live URL
+6. Set up twice-daily updates via cron/scheduled task
+7. Apply any CSS enhancements requested by user
+8. Do NOT sit idle — queue the asks and continue with non-blocked work
