@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: github-pages
-  pages: true
+  cancel-in-progress: true
 
 jobs:
   deploy:
