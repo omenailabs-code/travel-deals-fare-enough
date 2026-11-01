@@ -34,27 +34,35 @@ Project at `C:\Users\omena\travel-deals` on Windows 11.
 ## Git State
 - Repo committed: `a5883a4 Complete travel deals platform: Ollama descriptions, 18 deals, Astro build`
 - Branch: `master`
-- Remote: **NOT YET CONFIGURED** (no GitHub/cloud remote)
 
-## What's Pending
+## ✅ COMPLETED — LIVE SITE
+- **Site is LIVE on GitHub Pages**
+- **URL:** https://omenailabs-code.github.io/travel-deals-fare-enough/
+- **Repo:** https://github.com/omenailabs-code/travel-deals-fare-enough
+- **GitHub Account:** omenailabs@gmail.com
+- **PAT:** `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`
+- **GitHub Pages Status:** built (working)
+- **Workflow:** `.github/workflows/deploy.yml` configured for twice-daily updates
 
-### 1. FREE HOSTING DEPLOYMENT (User wants it completely free)
-Options (all free, all require a free account signup):
-- **GitHub Pages** — Free (unlimited bandwidth), push to GitHub repo → auto-deploy. Easiest option.
-- **Cloudflare Pages** — Free (100K requests/day), requires Cloudflare account. Fast CDN.
-- **Netlify** — Free (100GB bandwidth/month), requires Netlify account. Drag-and-drop or connect GitHub.
-- **Vercel** — Free tier (100GB), requires Vercel account. Good for static sites.
+## ⚠️ PENDING / NEXT STEPS
 
-**User hasn't chosen yet — ask which platform.**
+### 1. TWICE-DAILY AUTOMATED UPDATES (Critical)
+- Current workflow only handles static build — does NOT regenerate deals.json
+- Need to fix `.github/workflows/deploy.yml` to:
+  1. Install Python dependencies (sqlite3, lxml, httpx, etc.)
+  2. Run `python dealengine/check.py --mode full` to scrape fresh deals
+  3. Run `python rebuild_deals.py` to rebuild deals.json from DB
+  4. Run `python dealengine/content_gen.py` for Ollama descriptions
+  5. Build site: `cd site && npm install && npm run build`
+  6. Deploy to GitHub Pages
+- Without this fix, the site shows stale deals forever
 
-### 2. TWICE-DAILY DATA UPDATES
-- Set up cron job or Windows scheduled task
-- Run `python dealengine/check.py --mode full` twice daily (e.g., 6 AM and 6 PM)
-- This regenerates `deals.json` with fresh scraped deals
-- On deployment, site rebuilds from updated JSON
-- For static hosting: need a build trigger (GitHub Actions, Cloudflare Worker, etc.)
+### 2. SITE CLEANUP
+- Remove `test.txt` and `test/index.html` files from repo (leftovers)
+- Remove `trigger.txt` (temporary file used to trigger build)
+- These are clutter and should be cleaned up
 
-### 3. CSS ENHANCEMENTS
+### 3. CSS ENHANCEMENTS (Optional)
 - Tailwind CSS is set up in `tailwind.config.mjs`
 - Can customize colors, spacing, fonts
 - Modify `DealCard.astro` for card styling
@@ -73,64 +81,44 @@ Options (all free, all require a free account signup):
 
 ### 1. Verify the site works
 ```bash
-cd C:\Users\omena\travel-deals\site
-npm install   # if node_modules missing
-npm run build  # should produce dist/ with 18 cards
+curl -s https://omenailabs-code.github.io/travel-deals-fare-enough/ | head -20
+# Should show the live HTML with 18 deal cards
 ```
 
-### 2. Verify data
+### 2. Fix the GitHub Actions workflow (Critical)
+The current `.github/workflows/deploy.yml` only builds the static site — it does NOT run deal scraping.
+Fix it to:
+- Install Python deps (sqlite3, lxml, httpx, pillow)
+- Run `python dealengine/check.py --mode full`
+- Run `python rebuild_deals.py`
+- Run `python dealengine/content_gen.py` (for Ollama descriptions)
+- Build: `cd site && npm install && npm run build`
+- Deploy: `actions/deploy-pages@v4`
+
+### 3. Clean up temporary files
+Remove from repo: `test.txt`, `test/index.html`, `trigger.txt`
+
+### 4. Test the full pipeline manually
 ```bash
 cd C:\Users\omena\travel-deals
-python rebuild_deals.py   # should show 15 packages + 3 flights
+python dealengine\check.py --mode full
+python rebuild_deals.py
+python dealengine\content_gen.py
+cd site && npm run build
 ```
+Then verify 18 cards still render correctly.
 
-### 3. Deploy to Free Hosting (ask user)
-Once user chooses a platform:
-
-**GitHub Pages (recommended):**
-```bash
-cd C:\Users\omena\travel-deals
-# Create repo and push
-gh repo create travel-deals-fare-enough --source=. --private=false
-git remote add origin https://github.com/<username>/travel-deals-fare-enough.git
-git push -u origin master
-# Then enable GitHub Pages in repo Settings → Pages
-```
-
-**OR Cloudflare Pages:**
-- Create free Cloudflare account
-- Connect GitHub repo
-- Build command: `cd site && npm install && npm run build`
-- Output: `site/dist`
-- Deploy
-
-**OR Netlify:**
-- Create free Netlify account
-- Drag-and-drop the `site/dist` folder
-- OR connect GitHub repo
-
-### 4. Set Up Twice-Daily Updates
-```bash
-# Windows: Set up a scheduled task or cron
-# Run: python C:\Users\omena\travel-deals\dealengine\check.py --mode full
-# Schedule: twice daily (6 AM and 6 PM)
-# Output: updates deals.json, triggers rebuild
-```
-
-### 5. Apply CSS Enhancements
-- Modify `site/src/components/DealCard.astro` for card styling
-- Modify `site/src/layouts/MainLayout.astro` for global styles
-- Add custom CSS in `<style>` blocks
-- Tweak `site/tailwind.config.mjs` for theme changes
+### 5. Apply CSS Enhancements (optional)
+User requested CSS improvements — customize colors, spacing, fonts per their preference.
 
 ## First Action After Boot
 1. Read `PROJECT.md`, `TASKS.md`, `LOG.md`, and `CONTINUE.md`
-2. State current phase and next task
-3. **Ask user which FREE hosting platform they prefer** (GitHub Pages / Cloudflare Pages / Netlify / Vercel)
-4. Set up the chosen platform and push the site
-5. Verify the live URL is working
-6. Set up twice-daily automated data updates (cron/scheduled task)
-7. Apply any CSS enhancements requested by user
+2. Verify live site: `curl -s https://omenailabs-code.github.io/travel-deals-fare-enough/ | head -20`
+3. **Fix the GitHub Actions workflow** to include deal scraping + rebuild steps
+4. Clean up temporary files from repo (`test.txt`, `test/index.html`, `trigger.txt`)
+5. Test the full pipeline manually (check.py → rebuild_deals.py → content_gen.py → npm build)
+6. Verify 18 cards still render correctly
+7. Apply CSS enhancements if user requests them
 8. **Do NOT sit idle** — queue the asks and continue with non-blocked work
 
 ## Environment Notes
