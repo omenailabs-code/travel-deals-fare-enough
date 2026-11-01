@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+    - cron: '0 18 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  pages: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install
+        run: cd site && npm install
+      - name: Build
+        run: cd site && npm run build
+      - name: Deploy
+        uses: actions/deploy-pages@v4
