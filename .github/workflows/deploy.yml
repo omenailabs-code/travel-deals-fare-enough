@@ -59,5 +59,12 @@ jobs:
           cd site
           npm run build
 
+      - name: Upload built site as github-pages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: site/dist
+          retention-days: 1
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
