@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install sqlite3 lxml httpx pillow
+          pip install lxml httpx pillow
 
       - name: Run deal scraping and anomaly detection
         run: |
