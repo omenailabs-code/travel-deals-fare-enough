@@ -1,0 +1,50 @@
+[
+  {
+    "resort": "Hotel Irotama Reservado",
+    "price": 58.01,
+    "hotel_rating": 9.0,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  },
+  {
+    "resort": "Hotel Jardin Boutique rodadero",
+    "price": 61.83,
+    "hotel_rating": 9.0,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  },
+  {
+    "resort": "EcoHotel Inka Minka",
+    "price": 66.07,
+    "hotel_rating": 9.1,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  },
+  {
+    "resort": "GHL Relax Hotel Costa Azul",
+    "price": 142.38,
+    "hotel_rating": 9.2,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  },
+  {
+    "resort": "Hotel Brisas del Mar",
+    "price": 245.6,
+    "hotel_rating": 9.2,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  },
+  {
+    "resort": "Casa Verano Beach Hotel - Adults Only",
+    "price": 274.81,
+    "hotel_rating": 9.3,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com"
+  }
+]

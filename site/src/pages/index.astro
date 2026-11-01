@@ -1,0 +1,32 @@
+---
+import MainLayout from '../components/MainLayout.astro';
+import DealCard from '../components/DealCard.astro';
+import { getVerifiedDeals } from '../lib/deals';
+
+const deals = getVerifiedDeals();
+---
+<MainLayout>
+
+<header class="py-20 text-center">
+		<h1 class="text-6xl font-bold font-space mb-4">Find the <span class="text-amber">Fare Enough</span>.</h1>
+		<p class="text-xl text-gray-400 max-w-2xl mx-auto">
+			We use automated data analysis and local AI to scan thousands of flight paths, 
+			filtering out the noise to find the genuine anomalies.
+		</p>
+	</header>
+
+	<div class="mb-12">
+		<h2 class="text-3xl font-bold font-space mb-8">Verified Today</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			{deals.length > 0 ? (
+				deals.map((deal) => (
+					<DealCard deal={deal} />
+				))
+			) : (
+				<div class="col-span-full text-center py-20 bg-navy-800 rounded-xl border border-dashed border-white/20">
+					<p class="text-gray-500">No deals verified in the last 24 hours. Check back soon!</p>
+				</div>
+			)}
+		</div>
+	</div>
+</MainLayout>

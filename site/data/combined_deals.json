@@ -1,0 +1,149 @@
+[
+  {
+    "resort": "Hotel Irotama Reservado",
+    "price": 58.01,
+    "hotel_rating": 9.0,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 4
+  },
+  {
+    "resort": "Hotel Jardin Boutique rodadero",
+    "price": 61.83,
+    "hotel_rating": 9.0,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 4
+  },
+  {
+    "resort": "EcoHotel Inka Minka",
+    "price": 66.07,
+    "hotel_rating": 9.1,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 5
+  },
+  {
+    "resort": "GHL Relax Hotel Costa Azul",
+    "price": 142.38,
+    "hotel_rating": 9.2,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 5
+  },
+  {
+    "resort": "Hotel Brisas del Mar",
+    "price": 245.6,
+    "hotel_rating": 9.2,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 5
+  },
+  {
+    "resort": "Casa Verano Beach Hotel - Adults Only",
+    "price": 274.81,
+    "hotel_rating": 9.3,
+    "destination": "Santa Marta (Near Playa Dormida)",
+    "is_all_inclusive": false,
+    "source": "booking.com",
+    "stars": 5
+  },
+  {
+    "resort": "Sky-High Bangkok Sophistication",
+    "hotel_rating": 4.7,
+    "price": 699,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Corazon Cabo Resort & Spa",
+    "hotel_rating": 4.7,
+    "price": 949,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Ubud Riverfront Private Pool Villas",
+    "hotel_rating": 4.7,
+    "price": 999,
+    "is_all_inclusive": false,
+    "source": "luxuryescapes.com"
+  },
+  {
+    "resort": "Ocean El Faro",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1699,
+    "was_price": 5029,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Ocean El Faro-el Beso Adults Only",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1699,
+    "was_price": 4869,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Barcelo Bavaro Beach",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1719,
+    "was_price": 4389,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Barcelo Bavaro Palace",
+    "destination": "Dominican Republic",
+    "hotel_rating": 5.0,
+    "price": 1729,
+    "was_price": 4379,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Ocean Blue and Sand",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1769,
+    "was_price": 4399,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Vik Hotel Cayena Beach",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.0,
+    "price": 1809,
+    "was_price": 4629,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Dreams Cap Cana Resort & Spa",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.5,
+    "price": 1819,
+    "was_price": 4539,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  },
+  {
+    "resort": "Sunscape Coco Punta Cana",
+    "destination": "Dominican Republic",
+    "hotel_rating": 4.0,
+    "price": 1849,
+    "was_price": 4579,
+    "is_all_inclusive": true,
+    "source": "redtag.ca"
+  }
+]

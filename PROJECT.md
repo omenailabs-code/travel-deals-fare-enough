@@ -1,7 +1,7 @@
 # PROJECT.md — Travel Deals Business (state)
 
 ## Current state (rewrite every 20 steps)
-- Phase 1 (deal engine) in progress — engine core built 2026-10-31: SQLite schema (routes/prices/deals/baseline_cache), anomaly detection, confidence ladder (`dealengine/` + `tests/`, 13/13 unit tests, seed→check demo verified). Live price feeds still blocked on NEEDS OWNER #2 (data-source signups).
+- Phase 1 (deal engine) in progress — engine core built 2026-10-31: SQLite schema (routes/prices/deals/baseline_cache), anomaly detection, confidence ladder (`dealengine/` + `tests/`, 13/13 unit tests, seed→check demo verified, commit a5c8cf2). Data-source plan corrected 2026-10-31: **Travelpayouts/Aviasales is the primary free source** (still open, free signup); Amadeus Self-Service decommissioned 2026-07-17; Kiwi invite-only (optional). Live feeds blocked on owner's Travelpayouts signup approval (NEEDS OWNER #2).
 - Homepage design preview v1 done (`site/index.html`, screenshots in `site/screenshots/`) — awaiting owner reaction, then iterate.
 - Domain cost check 2026-10-31: .travel ≈ $16 first-year promo but ~$124–134/yr renewal (premium TLD); .co ≈ $15–31/yr; .io ≈ $35–60/yr. fareenough.com/.net/.app taken; .travel/.co/.io free to claim. YT/X @fareenough appear taken.
 - Brand = **Fare Enough** (owner-approved 2026-10-31). After owner's domain decision: purchase (hard stop #3) + Cloudflare Pages (free tier).

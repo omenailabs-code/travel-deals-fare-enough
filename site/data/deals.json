@@ -1,0 +1,200 @@
+[
+  {
+    "resort": "Barcelo Bavaro Palace",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 5,
+    "price": 4379.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Flash Deal: Toronto to Punta Cana, Dominican Republic for just $4379 CAD!"
+  },
+  {
+    "resort": "Dreams Los Cabos Resort & Spa",
+    "destination": "Los Cabos",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package",
+    "description": "Book now and get a thrilling getaway from N/A to Los Cabos for just 350.0 CAD. Flash sale details inside."
+  },
+  {
+    "resort": "Grand Fiesta Americana Cancun",
+    "destination": "Cancun",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package",
+    "description": "350 CAD to Cancun - The Flashiest Getaway Deal."
+  },
+  {
+    "resort": "Sunshine Resort Orlando",
+    "destination": "Orlando",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package",
+    "description": "Flash Deal: Book your dream Orlando vacation for just $350 CAD!"
+  },
+  {
+    "resort": "Bahia Pr\u00edncipe Riviera Maya",
+    "destination": "Riviera Maya",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package",
+    "description": "350 CAD to Riviera Maya: Flash Sale Escape Deal!"
+  },
+  {
+    "resort": "Iberostar Grand Punta Cana",
+    "destination": "Punta Cana",
+    "stars": 4,
+    "price": 350.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "travelpayouts",
+    "type": "package",
+    "description": "Escape to the sun-drenched shores of Punta Cana for just $350 CAD on this exclusive flash deal."
+  },
+  {
+    "resort": "Barcelo Bavaro Beach",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4389.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Instantly Travel to Toronto from N/A and Escape to the Beaches of Punta Cana for just 4389.0 CAD."
+  },
+  {
+    "resort": "Ocean Blue and Sand",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4399.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Flash Deal: Book Toronto to Punta Cana + Toronto Round-Trip for just $4399 CAD!"
+  },
+  {
+    "resort": "Dreams Cap Cana Resort & Spa",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4539.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Flash Deal: Save Big on Roundtrip Flights from Canada to Toronto and Punta Cana, Dominican Republic for just $4539 CAD."
+  },
+  {
+    "resort": "Ocean El Faro-el Beso Adults Only",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 4869.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Flash Deal: Toronto to Punta Cana, Dominican Republic for just $4869 CAD!"
+  },
+  {
+    "resort": "Ocean El Faro",
+    "destination": "Toronto to Punta Cana, Dominican Republic",
+    "stars": 4,
+    "price": 5029.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "redtag.ca",
+    "type": "package",
+    "description": "Easily explore Toronto and the lush Dominican Republic with this amazing 5029.0 CAD deal."
+  },
+  {
+    "resort": "The Aviary Hotel",
+    "destination": "",
+    "stars": null,
+    "price": 399.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package",
+    "description": "Book your dream escape for just CAD 399 and discover stunning destinations with this incredible flash sale deal."
+  },
+  {
+    "resort": "Anana Ecological Resort Krabi",
+    "destination": "",
+    "stars": null,
+    "price": 419.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package",
+    "description": "Save big with this incredible 419.0 CAD getaway deal!"
+  },
+  {
+    "resort": "Meli\u00e1 Pattaya Hotel",
+    "destination": "",
+    "stars": null,
+    "price": 499.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package",
+    "description": "Book now and save big with this 499.0 CAD flash deal for exclusive travel deals!"
+  },
+  {
+    "resort": "Mai Khao Lak Beach Resort & Spa",
+    "destination": "",
+    "stars": null,
+    "price": 799.0,
+    "currency": "CAD",
+    "is_all_inclusive": true,
+    "source": "luxuryescapes.com",
+    "type": "package",
+    "description": "Escape the Ordinary: Limited-Time 799.0 CAD Flights to Be Had!"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "route_key": "SFO-LAX",
+    "price": 50.4,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight",
+    "description": "50.4 USD from SFO to LAX \u2013 Unmissable Flight Deal!",
+    "confidence": 9
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "route_key": "ORD-MIA",
+    "price": 124.8,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight",
+    "description": "Book your flight from ORD to MIA for just $124.80 and discover the magic of both cities.",
+    "confidence": 9
+  },
+  {
+    "origin": "JFK",
+    "destination": "LHR",
+    "route_key": "JFK-LHR",
+    "price": 286.0,
+    "currency": "USD",
+    "label": "anomaly",
+    "type": "flight",
+    "description": "Jumpstart your summer with this unbeatable $286 JFK to LHR flight deal!",
+    "confidence": 9
+  }
+]

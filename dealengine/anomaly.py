@@ -18,7 +18,7 @@ Implements PROMPT.md pipeline steps 1-2 and 4:
 from statistics import median
 
 MIN_OBS = 5                  # min history observations before we flag at all
-BELOW_MEDIAN_RATIO = 0.60    # >=40% below median
+BELOW_MEDIAN_RATIO = 0.65    # >=35% below median
 BELOW_MIN_NORMAL_RATIO = 0.95  # below lowest-normal by >5%
 EXTREME_OUTLIER_RATIO = 0.05   # below 5% of median -> likely error fare
 
@@ -72,7 +72,7 @@ def detect_anomaly(candidate, history, currency=None, currency_modal=None):
 def classify(candidate, history, extreme=False):
     """Label a flagged price: mistake | flash (flagged means <60% of median)."""
     m, _ = compute_baseline(history)
-    if extreme or candidate < 0.35 * m:
+    if extreme or candidate < 0.40 * m:
         return "mistake"
     return "flash"
 

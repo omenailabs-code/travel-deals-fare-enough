@@ -41,20 +41,21 @@ CREATE INDEX IF NOT EXISTS idx_prices_route_time ON prices(route_id, observed_at
 
 CREATE TABLE IF NOT EXISTS deals (
   id             INTEGER PRIMARY KEY,
-  route_id       INTEGER NOT NULL REFERENCES routes(id) ON DELETE CASCADE,
+  route_id       INTEGER REFERENCES routes(id) ON DELETE CASCADE,
+  package_id     INTEGER REFERENCES packages(id) ON DELETE CASCADE,
   price          REAL NOT NULL,
   currency       TEXT NOT NULL,
-  label          TEXT NOT NULL CHECK (label IN ('verified','flash','mistake')),
-  confidence     INTEGER NOT NULL CHECK (confidence BETWEEN 1 AND 5),
-  source_url     TEXT NOT NULL,
-  verified_at    TEXT NOT NULL,
-  verified_by    TEXT,
-  travel_window  TEXT,
-  terms          TEXT,
-  status         TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active','expired','archived')),
-  expired_at     TEXT,
-  created_at     TEXT NOT NULL,
-  published      INTEGER NOT NULL DEFAULT 0
+  label          TEXT NOT NULL CHECK (label IN ('verified','flash','mistake')),\
+  confidence     INTEGER NOT NULL CHECK (confidence BETWEEN 1 AND 5),\
+  source_url     TEXT NOT NULL,\
+  verified_at    TEXT NOT NULL,\
+  verified_by    TEXT,\
+  travel_window  TEXT,\
+  terms          TEXT,\
+  status         TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active','expired','archived')),\
+  expired_at     TEXT,\
+  created_at     TEXT NOT NULL,\
+  published      INTEGER NOT NULL DEFAULT 0\
 );
 CREATE INDEX IF NOT EXISTS idx_deals_status ON deals(status);
 
@@ -66,6 +67,43 @@ CREATE TABLE IF NOT EXISTS baseline_cache (
   window_start TEXT,
   window_end   TEXT,
   computed_at  TEXT
+);
+
+CREATE TABLE IF NOT EXISTS packages (
+  id              INTEGER PRIMARY KEY,
+  resort          TEXT NOT NULL,
+  destination     TEXT NOT NULL,
+  board_type      TEXT, -- e.g., 'all-inclusive'
+  nights          INTEGER,
+  departure_origin TEXT,
+  departure_date  TEXT,
+  source          TEXT,
+  source_url      TEXT,
+  UNIQUE(resort, destination, board_type, nights, departure_origin, departure_date)
+);
+
+CREATE TABLE IF NOT EXISTS package_prices (
+  id               INTEGER PRIMARY KEY,
+  package_id       INTEGER NOT NULL REFERENCES packages(id) ON DELETE CASCADE,
+  price_total      REAL NOT NULL,
+  price_per_person REAL,
+  currency         TEXT NOT NULL,
+  source           TEXT NOT NULL,
+  source_url       TEXT,
+  observed_at      TEXT NOT NULL,
+  raw_json         TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_package_prices_time ON package_prices(package_id, observed_at);
+
+CREATE TABLE IF NOT EXISTS package_baseline_cache (
+  package_id     INTEGER PRIMARY KEY REFERENCES packages(id) ON DELETE CASCADE,
+  median_price   REAL,
+  lowest_normal  REAL,
+  n_obs           INTEGER,
+  window_start   TEXT,
+  window_end     TEXT,
+  computed_at    TEXT
 );
 """
 

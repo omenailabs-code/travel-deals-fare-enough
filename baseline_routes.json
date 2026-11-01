@@ -1,0 +1,22 @@
+[
+  {"origin": "JFK", "destination": "LHR", "currency": "USD", "note": "transatlantic hub, strong mistake-fare history"},
+  {"origin": "BOS", "destination": "LHR", "currency": "USD"},
+  {"origin": "ORD", "destination": "LHR", "currency": "USD"},
+  {"origin": "JFK", "destination": "CDG", "currency": "USD"},
+  {"origin": "JFK", "destination": "MAD", "currency": "USD"},
+  {"origin": "JFK", "destination": "FRA", "currency": "USD"},
+  {"origin": "LAX", "destination": "BCN", "currency": "USD"},
+  {"origin": "JFK", "destination": "ROM", "currency": "USD"},
+  {"origin": "JFK", "destination": "DXB", "currency": "USD", "note": "long-haul, frequent promo fares"},
+  {"origin": "JFK", "destination": "DOH", "currency": "USD"},
+  {"origin": "LAX", "destination": "NRT", "currency": "USD"},
+  {"origin": "SFO", "destination": "NRT", "currency": "USD"},
+  {"origin": "LAX", "destination": "BKK", "currency": "USD"},
+  {"origin": "LAX", "destination": "SIN", "currency": "USD"},
+  {"origin": "JFK", "destination": "SYD", "currency": "USD", "note": "longest-haul watch: biggest absolute savings"},
+  {"origin": "JFK", "destination": "GRU", "currency": "USD"},
+  {"origin": "MIA", "destination": "GRU", "currency": "USD"},
+  {"origin": "JFK", "destination": "MEX", "currency": "USD"},
+  {"origin": "JFK", "destination": "PTY", "currency": "USD"},
+  {"origin": "JFK", "destination": "EZE", "currency": "USD"}
+]

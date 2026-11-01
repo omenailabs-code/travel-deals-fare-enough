@@ -3,9 +3,10 @@
 ## NEEDS OWNER
 > Queued for owner reply 2026-10-31 (session 2) — #2 and #3 unblock Phase 1; reply in chat or edit this file.
 1. ~~Brand approval~~ ✅ **Done — "Fare Enough"** (owner, 2026-10-31). Domain fareenough.travel free; .com/.net/.app taken. YT/X @fareenough appear taken.
-2. (Phase 1) Approve free-tier data-source account signups: Amadeus Self-Service, Kiwi Tequila, Travelpayouts. Requires your email; no cost. **Rec: approve — needed before any real price data flows in; signups take ~10 min and use your email only.**
+2. (Phase 1) **Data source — plan corrected 2026-10-31:** Amadeus Self-Service is **decommissioned (2026-07-17)** and Kiwi Tequila is **invitation-only** — neither is sign-up-able. **Travelpayouts/Aviasales: still open and free** (owner email, ~10 min, $0; gives API token + affiliate deeplink, which the site's disclosure already assumes). **Rec: approve the Travelpayouts signup — it is the one thing unblocking Phase 1. Kiwi: optional email to affiliates@kiwi.com, no guarantee.**
 3. (Phase 1–2) Approve domain purchase + Cloudflare Pages hosting. **Cost check 2026-10-31:** .travel = ~$16 first year (promo) but ~$124–134/yr renewal (premium TLD); .co = ~$15–31/yr; .io = ~$35–60/yr. Cloudflare Pages = $0. **Rec: fareenough.travel for brand fit if the ~$130/yr renewal is acceptable, otherwise fareenough.co (cheapest, same name).**
-4. (Phase 3–4) Approve social account creation + API access (Meta app, TikTok, YouTube, X); fallback route: Buffer/Metricool free tier.
+4. (Phase 3–4) Approve social account creation + API access (Meta app, TikTok, YouTube, X); fallback route: Buffer/Metricool free tier. @fareenough appears taken on YT/X — pick alternate handles.
+5. (Phase 2) Approve a free newsletter backend under your account for the site's email capture: Buttondown (100 subs free) or Brevo (300 emails/day free). No cost.
 
 ## Phase 0 — Setup
 - [x] Audit machine (2026-10-31, results in PROJECT.md)
@@ -18,7 +19,7 @@
 ## Phase 1 — Deal engine (blocked on NEEDS OWNER #2)
 - [ ] Apply for free API tiers (owner-approved)
 - [x] Engine scaffolding (2026-10-31): `dealengine/` — SQLite schema (routes/prices/deals/baseline_cache), anomaly detection (>=40% below median, below lowest-normal, extreme-outlier + wrong-currency patterns), confidence ladder (bootstrap caps, mistake cap 3, +1 live re-verify), `check` CLI (scan + baseline_cache refresh + deal writes, deduped), `seed` (synthetic-only, excluded from real data). Tests: 13/13 pass; seed→check demo correctly flagged 3/3 injected anomalies.
-- [ ] Data-source adapters for approved APIs (Amadeus/Kiwi/Travelpayouts) plugging into `prices` — after #2
+- [ ] Data-source adapter: Travelpayouts/Aviasales price search plugging into `prices` (Kiwi optional if invited) — after #2
 - [ ] Baseline price store in SQLite — bootstrap with 2–3 weeks of observation; early deals get lower confidence labels (see prompt-review note: 90-day baseline vs day one)
 - [ ] Anomaly detection: >=40% below median, below lowest-normal by clear margin, known error-fare patterns
 - [ ] Live verification step (exact dates, taxes, baggage, cancellation terms) + confidence score 1–5

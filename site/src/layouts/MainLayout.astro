@@ -1,0 +1,36 @@
+---
+// Main layout — Navy/Amber theme (#0a192f, #f59e0b)
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text xmlns=%22http://www.w3.org/2000/svg%22 x=%2250%22 y=%2270%22 dy=%2230%22 text-anchor=%22middle%22 font-size=%2270%22>✈</text></svg>" />
+    <title>Fare Enough — Find the Fare Enough</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #0a192f;
+        color: #e0e0e0;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+
+      .text-amber { color: #f59e0b; }
+      .bg-amber { background-color: #f59e0b; }
+      .border-amber { border-color: #f59e0b; }
+      .bg-navy-900 { background-color: #0a192f; }
+      .bg-navy-800 { background-color: #112240; }
+    </style>
+  </head>
+  <body class="bg-navy-900">
+    <slot />
+  </body>
+</html>
